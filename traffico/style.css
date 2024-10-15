@@ -1,0 +1,648 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+html, body {
+    overflow-x: hidden; /* Скрываем горизонтальный скроллинг */
+}
+
+#wrapper {
+    max-width: 1600px; /* Используем max-width вместо width */
+    margin: auto;
+    background: #E5E5E5;
+}
+
+#section1 {
+    background: url(img/Scene.png) no-repeat;
+    width: 100%; /* Задаем ширину 100% */
+    height: 1005px;
+}
+
+.top {
+    display: flex;
+    height: 82px;
+    box-shadow: none;
+    width: 100%;
+}
+
+.logo {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #FFFFFF; /* Цвет текста */
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    margin-left: 28px;
+    margin-top: 50px;
+    transition: color 0.3s, text-shadow 0.3s; /* Плавный переход для цвета и тени */
+}
+
+.logo:hover {
+    color: #EE4D47; /* Цвет текста при наведении */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Тень текста при наведении */
+}
+.logopic {
+    width: 31px;
+    height: 33px;
+    margin-left: 256px;
+    margin-top: 50px;
+}
+
+.menu {
+    width: 604px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 292px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    width: 70px;
+    height: 21px;
+}
+
+.menu li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #FFFFFF; /* Цвет текста */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+.menu li a:hover {
+    color: #EE4D47; /* Цвет текста при наведении */
+}
+
+.contactUs {
+    width: 158px;
+    height: 60px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #EE4D47;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer; /* курсор указателя для кнопки */
+    transition: transform 0.3s, background-color 0.3s; /* добавляем эффекты */
+}
+
+.contactUs:hover {
+    transform: translateY(-5px); /* эффект при наведении */
+    background-color: #d94338; /* более темный цвет при наведении */
+}
+
+.getStarted {
+    margin-left: 240px;
+    margin-top: 60px;
+    width: 220px;
+    height: 60px;
+    background: #EE4D47;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    cursor: pointer; /* курсор указателя для кнопки */
+    transition: transform 0.3s, background-color 0.3s; /* добавляем эффекты */
+}
+
+.getStarted:hover {
+    transform: translateY(-5px); /* эффект при наведении */
+    background-color: #d94338; /* более темный цвет при наведении */
+}
+
+.mainFoto {
+    width: 100%; /* Задаем ширину 100% */
+    height: 1005px;
+}
+
+h1 {
+    margin-top: 90px;
+    margin-left: 240px;
+    width: 741px;
+    height: 300px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    transition: color 0.3s, transform 0.3s; /* Плавный переход для цвета и трансформации */
+}
+
+h1:hover {
+    color: #EE4D47; /* Цвет текста при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Тень текста при наведении */
+}
+
+.van {
+    width: 600px;
+    height: 394px;
+    margin-top: 180px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавный переход для трансформации и тени */
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 245px;
+    margin-right: 240px;
+}
+.block1 {
+    width: 1182px;
+    height: 570px;
+    margin-top: 191px;
+    display: flex;
+    flex-direction: row;
+}
+
+.podblock {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #EE4D47;
+}
+
+.infoBlock1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    color: #402B2B;
+    width: 470px;
+    height: 156px;
+    margin-top: 40px;
+}
+
+.colorInfoBlock1 {
+    position: relative; /* Устанавливаем относительное позиционирование для родительского элемента */
+    margin-top: 70px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #402B2B;
+    width: 570px;
+    height: 160px;
+    background: #FCDDD4;
+    transition: background 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+    padding: 20px; /* Добавляем немного внутреннего отступа для лучшего отображения текста */
+    border-radius: 8px; /* Закругляем углы для более приятного внешнего вида */
+}
+
+.colorInfoBlock1::before {
+    content: ""; /* Создаем пустой контент для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0px; /* Сдвигаем полоску влево */
+    top: 0; /* Начинаем с верхней части блока */
+    width: 10px; /* Ширина полоски */
+    height: 100%; /* Высота полоски равна высоте блока */
+    background-color: #ED4D47; /* Цвет полоски */
+    border-radius: 8px 0 0 8px; /* Закругляем углы полоски */
+}
+
+.colorInfoBlock1:hover {
+    background: #E8B8A0; /* Изменяем цвет фона при наведении */
+    transform: scale(1.02); /* Увеличиваем размер элемента при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Добавляем тень при наведении */
+}
+
+
+.infoFoto1 {
+    width: 575.11px;
+    height: 480px;
+    display: flex;
+    flex-direction: row;
+}
+#section3 {
+    position: relative;
+    /* width: 1600px; */
+    width: auto;
+    height: 1500px;
+    margin: auto;
+}
+.walppeper {
+    float: right;
+    /* width: 1170px; */
+    width: auto;
+    height: 1500px;
+    background-image: url('img/backSec3.png'); 
+    background-size: cover; 
+    background-position: center; 
+    z-index: -1;  
+}
+
+.faq {
+    position: absolute; /* Изменено на relative */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #EE4D47;
+
+    margin-left: 240px;
+    margin-top: 224px; 
+}
+
+.questions {
+    position: absolute; 
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140%;
+    color: #402B2B;
+
+    width: 550px;
+    height: auto; 
+    margin-left: 240px;
+    margin-top: 318px; 
+}
+
+.img-dropdown{
+    width: 708px;
+    height: 497.22px;
+    margin-top: 101px;
+    margin-left: 281px;
+}
+.cards {
+    margin-top: 89px;
+     margin-left: -190px; 
+    margin-right: 170px;/* 240px */                                                                             /* где-то здесь жопа*/
+    display: flex; 
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+    gap: 20px; /* Отступы между карточками */
+    justify-content: flex-start; /* Выравнивание карточек по левому краю */
+    width: 1170px; /* Убедитесь, что ширина остается прежней */
+}
+.dropdown {
+    width: calc(50% - 10px); /* Устанавливаем ширину карточки на 50% минус половина отступа */
+    height: 90px; /* Высота карточки */
+    background-color: white; /* Цвет фона карточки */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: height 0.3s ease; /* Плавный переход высоты */
+    overflow: hidden; /* Скрыть содержимое, выходящее за пределы */
+    position: relative;
+    display: flex; /* Используем Flexbox */
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: flex-start; /* Выравниваем текст по левому краю */
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #402B2B;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.dropdown-content {
+    height: 250px; /* Высота контента */
+    display: none; /* Скрываем контент по умолчанию */
+    position: absolute;
+    min-width: 160px;
+    padding: 12px 16px; 
+    z-index: 1;
+    opacity: 0; /* Изначально скрываем контент */
+    transition: opacity 0.3s ease; /* Плавный переход для прозрачности */
+    pointer-events: none; /* Отключаем события мыши */
+    background-color: #FFF7F5;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #402B2B;
+}
+.dropdown:hover {
+    height: 250px; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+    opacity: 1; 
+    pointer-events: auto; 
+}
+.dropdown1 {
+    width: calc(50% - 10px); /* Устанавливаем ширину карточки на 50% минус половина отступа */
+    height: 90px; /* Высота карточки */
+    background-color: rgba(237, 77, 71, 0.2); /* Цвет фона с прозрачностью */
+
+    cursor: pointer; 
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем текст по горизонтали */
+    letter-spacing: 0.05em;
+
+    color: #ED4D47; /* Цвет текста */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    z-index: 1;
+}
+#section4 {
+    height: 791px;
+    margin-left: 240px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.AboutUs {
+    width: 166px;
+    height: 50px;
+    margin-top: 177px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #EE4D47;
+}
+
+h4 {
+    margin-top: 44px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140%;
+    color: #402B2B;
+}
+
+
+.client {
+    width: 420px;
+    height: 360px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Добавлено для внутреннего отступа */
+    margin-right: 20px;
+    flex-shrink: 0; /* Не позволяет элементам сжиматься */
+}
+.clients {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* Скрываем переполнение */
+    width: 100%; /* Ширина контейнера */
+    position: relative; /* Для позиционирования */
+    margin-top: 271px;
+    margin-left: 86px;
+}
+
+.feedback {
+    width: 100%; /* Заменено на 100% для адаптивности */
+    flex-grow: 1; /* Позволяет занимать оставшееся пространство */
+    margin-top: 20px; /* Уменьшен отступ сверху */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #402B2B;
+}
+
+.clientInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.clientName {
+    margin-left: 20px; 
+    width: 160px;
+    height: 40px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    color: #402B2B;
+}
+
+.clientFoto {
+    width: 60px;
+    height: 60px;
+}
+.navigationButton {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    margin-bottom: 20px; /* Отступ между кнопками и текстом */
+    position: relative; /* Для позиционирования стрелок */
+    position: absolute;
+    margin-top: 196px;
+    margin-left: 865px;
+}
+
+.arrow {
+    background-color: transparent; /* Убираем фон */
+    color: #EE4D47; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px; /* Внутренние отступы */
+    cursor: pointer; /* Указатель при наведении */
+    margin: 0 10px; /* Отступы между кнопками */
+    font-size: 18px; /* Размер шрифта */
+    transition: transform 0.1s; /* Плавный переход для эффекта нажатия */
+}
+
+.arrow:active {
+    transform: scale(0.95); /* Эффект нажатия */
+}
+#section5{
+    margin-top: 220px;
+    height: 600px;
+    width: 100%;
+    margin-right: 240px;
+    background: url(img/footerBG.png) no-repeat;
+}
+.footerBG{
+    width: 1400px;
+    height: 660px;
+}
+.van2{
+    margin-top: -170px;
+}
+.formInfo {
+    display: flex;
+    flex-direction: row;
+    position: relative; /* Устанавливаем относительное позиционирование для родительского элемента */
+}
+
+.provide {
+    position: relative;
+    width: 330px;
+    height: 140px;
+    
+    margin-left: 340px;
+    margin-top: 110px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.provide::before {
+    content: ""; /* Создаем пустой контент для псевдоэлемента */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0px; /* Сдвигаем полоску влево */
+    top: 0; /* Начинаем с верхней части блока */
+    width: 10px; /* Ширина полоски */
+    height: 160px; /* Высота полоски равна высоте блока */
+    background-color: #ED4D47; /* Цвет полоски */
+    border-radius: 8px 0 0 8px; /* Закругляем углы полоски */
+    margin-left: -30px;
+}
+
+.signup-form {
+    width: 550px; 
+    height: 440px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    margin-left: 95px; 
+    margin-top: -155px;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background: white;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+
+    color: #402B2B;
+    margin-bottom: 150px;
+}
+
+
+.signup-form label {
+    margin-bottom: 5px; 
+}
+
+.signup-form input {
+    width: 400px;
+    height: 60px;
+
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    transition: border-color 0.3s, background-color 0.3s; 
+}
+
+.signup-form input:hover {
+    border-color: #EE4D47; /* Изменение цвета границы при наведении */
+    background-color: rgba(238, 77, 71, 0.1); /* Оранжевый цвет фона при наведении */
+}
+
+.get-started {
+    background-color: #EE4D47; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px; 
+    cursor: pointer; 
+    font-size: 16px;
+    width: 220px;
+    height: 60px;
+}
+
+.get-started:hover {
+    background-color: #d43f3a; /* Цвет кнопки при наведении */
+}
+footer{
+    height: 182px;
+    margin-right:335px;
+
+}
+.copyright{
+    width: 465px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 240px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    color: #402B2B;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+}
+.social{
+    margin-left: 31px;
+}
